@@ -14,11 +14,11 @@ export const Header = () => {
             </div>
             <div className="menu-items">
                 <ul className='flex items-center justify-end'>
-                    <li className='ml-5'><a href="#"><img src={About} alt="" /></a></li>
-                    <li className='ml-5'><a href="#"><img src={RoadMap} alt="" /></a></li>
-                    <li className='ml-5'><a href="#"><img src={NewsLetter} alt="" /></a></li>
-                    <li className='ml-5'><a href="#"><img src={WhitePaper} alt="" /></a></li>
-                    <li className='ml-5'><a href="#"><img src={Term} alt="" /></a></li>
+                    <li className='ml-5'><a href="/"><img src={About} alt="" /></a></li>
+                    <li className='ml-5'><a href="/"><img src={RoadMap} alt="" /></a></li>
+                    <li className='ml-5'><a href="/"><img src={NewsLetter} alt="" /></a></li>
+                    <li className='ml-5'><a href="/"><img src={WhitePaper} alt="" /></a></li>
+                    <li className='ml-5'><a href="/"><img src={Term} alt="" /></a></li>
                 </ul>
             </div>
         </div>

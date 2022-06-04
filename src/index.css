@@ -1,7 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+  --bg: var(--color_32);
+  --bg2: var(--color_23);
+  --alpha-bg: 1;
+  --color_11: 6,5,6;
+  --color_23: 255,60,0;
+  --color_32: 37,133,64;
+  --container-corvid-background-color: rgba(var(--bg,var(--color_11)),var(--alpha-bg,1));
+  --container-corvid-background-color2: rgba(var(--bg2,var(--color_11)),var(--alpha-bg,1));
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,4 +24,33 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+a,
+.footer-text {
+  font-family: 'Montserrat', sans-serif;
+}
+.about-bg {
+  background: var(--container-corvid-background-color,rgba(var(--bg,var(--color_11)),var(--alpha-bg,1))) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABkCAYAAAEwK2r2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzdDNUE3MDQyRkM0MTFFMThGMjdFNDIwRTdDRkVFODQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzdDNUE3MDUyRkM0MTFFMThGMjdFNDIwRTdDRkVFODQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozN0M1QTcwMjJGQzQxMUUxOEYyN0U0MjBFN0NGRUU4NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozN0M1QTcwMzJGQzQxMUUxOEYyN0U0MjBFN0NGRUU4NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqFzOEIAAACoSURBVHjaFMRZCgAQFABAS5KSJLn/TZ9mPiZFROLp6mhraWqoq6mqKH8BBCLEQYQoiBAGEYIggh9E8IIILhDBASLYQAQLQi9AAMHtFYezROHOEIa7RRDVQbxwV3HDjeeE28EOt4gVbhuac8EEA0CAtufoBAAQBmKo6AD1S9x/UhFqwx1mgrz25FsPlr4wxBVr9jdLHrVrz4xzbwQcYBDBwjZU2T/eRN8OXo4KQa+0dfMAAAAASUVORK5CYII=) repeat-x 0 0;
+}
+.roadmap-bg {
+  background: var(--container-corvid-background-color2,rgba(var(--bg2,var(--color_11)),var(--alpha-bg,1))) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABkCAYAAAEwK2r2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzdDNUE3MDQyRkM0MTFFMThGMjdFNDIwRTdDRkVFODQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzdDNUE3MDUyRkM0MTFFMThGMjdFNDIwRTdDRkVFODQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozN0M1QTcwMjJGQzQxMUUxOEYyN0U0MjBFN0NGRUU4NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozN0M1QTcwMzJGQzQxMUUxOEYyN0U0MjBFN0NGRUU4NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqFzOEIAAACoSURBVHjaFMRZCgAQFABAS5KSJLn/TZ9mPiZFROLp6mhraWqoq6mqKH8BBCLEQYQoiBAGEYIggh9E8IIILhDBASLYQAQLQi9AAMHtFYezROHOEIa7RRDVQbxwV3HDjeeE28EOt4gVbhuac8EEA0CAtufoBAAQBmKo6AD1S9x/UhFqwx1mgrz25FsPlr4wxBVr9jdLHrVrz4xzbwQcYBDBwjZU2T/eRN8OXo4KQa+0dfMAAAAASUVORK5CYII=) repeat-x 0 0;
+}
+.before-right::before {
+  content: '';
+  @apply absolute -right-[12px] top-0 w-6 h-6 roadmap-bg rounded-full shadow-Site border-2 border-solid border-Dark z-20;
+}
+.before-left::before {
+  content: '';
+  @apply absolute -left-[12px] top-0 w-6 h-6 roadmap-bg rounded-full shadow-Site border-2 border-solid border-Dark z-20;
+}
+.before-last::after {
+  content: '';
+  @apply absolute -left-[12px] bottom-0 w-6 h-6 roadmap-bg rounded-full shadow-Site border-2 border-solid border-Dark z-20;
+}
+.textShadow {
+  text-shadow: rgb(0 0 0 / 50%) -1px -1px 0px, rgb(0 0 0 / 50%) -1px 1px 0px, rgb(0 0 0 / 50%) 1px 1px 0px, rgb(0 0 0 / 50%) 1px -1px 0px;
+}
+canvas.react-pdf__Page__canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
