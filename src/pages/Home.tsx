@@ -1,5 +1,5 @@
 import React from 'react'
-import BG from '../assets/images/bg-image.webp'
+import BG from '../assets/images/star-blinking.gif'
 import { Banner } from '../components/Banner'
 import { About } from '../components/About'
 import { RoadMap } from '../components/RoadMap'
@@ -22,7 +22,7 @@ export const Home = () => {
             <GiveADuck />
             <Footer />
         </div>
-        <div className="bg fixed top-0 left-0 w-full h-screen z-10 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: 'url(' + BG + ')'}} />
+        <div className="bg fixed top-0 left-0 w-full h-full z-10 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: 'url(' + BG + ')'}} />
       </>
   )
 }
