@@ -71,7 +71,7 @@ export const Team = () => {
                 </div>
             </div>
         </div>
-        <div className="ads w-full max-w-siteWidth m-auto px-4 pb-8 lg:pb-0">
+        <div className="ads w-full max-w-siteWidth m-auto px-4 pb-8">
             <img className='w-full' src={Ads3} alt="Ads3" />
         </div>
     </>

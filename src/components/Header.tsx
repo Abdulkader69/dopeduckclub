@@ -1,4 +1,4 @@
-import Logo from '../assets/images/Dope-Duck-Club.webp'
+import Logo from '../assets/images/main-logo.jpg'
 import About from '../assets/images/about.webp'
 import RoadMap from '../assets/images/Roadmap.webp'
 import NewsLetter from '../assets/images/Newsletter-.webp'
@@ -13,7 +13,7 @@ export const Header = () => {
     <header id="main-header" className={`${showMenu ? 'bg-[rgba(35,35,35)]' : 'bg-[rgba(35,35,35)]/60'} h-16 fixed top-0 left-0 w-full z-50 overflow-hidden`}>
         <div className="w-full max-w-siteWidth m-auto px-4 flex items-center justify-between">
             <div className="logo">
-                <Link className="cursor-pointer" to="Banner" spy={true} smooth={true} duration={500}><img src={Logo} alt="logo" /></Link>
+                <Link className="cursor-pointer" to="Banner" spy={true} smooth={true} duration={500}><img className='w-[120px]' src={Logo} alt="logo" /></Link>
             </div>
             <div className="menu-items hidden md:block">
                 <ul className='flex items-center justify-end'>
